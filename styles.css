@@ -1,0 +1,701 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://fortawesome.github.io/Font-Awesome/assets/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('https://fortawesome.github.io/Font-Awesome/assets/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('https://fortawesome.github.io/Font-Awesome/assets/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('https://fortawesome.github.io/Font-Awesome/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('https://fortawesome.github.io/Font-Awesome/assets/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('https://fortawesome.github.io/Font-Awesome/assets/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+/*    background: #5c5c5c url("https://cgt.org.es/sites/default/files/IMG/png/logo_sello.png") no-repeat scroll center top;*/
+    background: #f5f5f5 none no-repeat scroll center top;
+    color: #212121;
+    font-family: "RobotoDraft","Roboto",sans-serif;
+}
+
+/**::before, *::after {
+    box-sizing: border-box;
+}*/
+
+#header {
+min-height:115px;
+background:#fff;
+box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.12);
+}
+.minimal #header {min-height:105px;}
+
+#logo, #toplogo {display:none;}
+
+#taskbar a.button-settings:before {
+content: "\f085";
+box-sizing:border-box;
+font-size: 1em;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+
+#login-form .box-inner {
+    background: transparent none no-repeat scroll left top;
+    border: 0px solid #333;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0 50px;
+    padding: 10px 24px 24px;
+    width: 430px;
+}
+
+#login-form td.title {
+    color: #eee;
+    text-align: right;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+#login-form input[type="text"], #login-form input[type="password"] {
+    border-color: transparent;
+    color: #fff
+}
+
+#login-form .box-bottom {
+    background: transparent none no-repeat scroll center top;
+    margin-top: -3px;
+    padding-top: 10px;
+}
+
+#login-form {
+    background-image: url("/skins/cgt/logo_sello_login.png");
+    background-position: center top;
+    margin: 0 auto 2ex;
+    padding-bottom: 100px;
+    padding-top: 400px;
+    position: relative;
+    width: 580px;
+}
+
+#topline {
+    background: #971814 none repeat scroll 0 0;
+    border-bottom: 0px solid #eee;
+    color: #fff;
+}
+
+
+.minimal #topline {
+    background-color: #d14836;
+}
+
+.minimal #taskbar .button-inner {
+text-indent:0px;
+height:auto!important;
+width:auto!important;
+margin-top:-5px;
+top:-5px;
+}
+
+#topnav {
+    background: #D1342F none repeat scroll 0 0;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.26);
+   /* width: 100%;*/
+    background-image: url("/skins/cgt/logo_sello_webmail.png");
+    background-position: 0.5% center;
+    background-repeat: no-repeat;
+
+}
+
+
+#mainscreen {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 73px;
+}
+
+#mainscreencontent {
+    bottom: 0;
+    left: 0;
+    margin: 2ex 2ex 0;
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+
+/*
+#mainscreen {
+    background-color: #fff;
+}
+*/
+#topline a.button-logout {
+    color: #fff;
+    background:rgba(0, 0, 0, 0) url("/skins/cgt/buttons.png") no-repeat scroll -6px -193px;
+}
+#topline .topleft a {
+color:#fff;
+}
+
+#taskstoolbar,
+#addressbooktoolbar,
+#messagetoolbar {
+    background-color: #fff;
+    height: 42px;
+    /*position: relative;*/
+    top: 0;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);*/
+}
+#messagesearchtools {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 25;
+}
+
+.minimal #taskbar a.button-selected,
+#taskbar a.button-selected {
+    background-color: transparent;
+    color: #3cf;
+}
+
+#taskbar {
+    float: none;
+    padding-left: 60px;
+    padding-right: 18px;
+    padding-top: 14px;
+    position: relative;
+}
+
+#taskbar a.button-settings span.button-inner  {display:none;}
+.button-settings .button-inner {display:none;}
+
+.minimal #taskbar a span.button-inner,
+#taskbar a span.button-inner {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll -1000px 0 !important;
+    /*display: none;*/
+    font-size: 110%;
+    font-weight: normal;
+    height: 19px;
+    padding: 5px 0 0 0;
+    text-shadow: none;
+}
+
+#topline a, #topnav a {
+    color: #fff;
+}
+
+.uibox {
+    background: #fff none repeat scroll 0 0;
+    /*border: 0px solid #a3a3a3;*/
+    border: 1px solid #ececec;
+    border-radius: 0px;
+    border-width: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+table.records-table {
+border: none !important;
+}
+.records-table td {
+border-left: none !important;
+border-right: none !important;
+padding: 8px 3px !important;
+}
+
+.records-table thead tr th {
+    background-color: #fff !important;
+   border-left: medium none;
+    border-right: medium none;
+}
+
+.records-table thead th, .records-table thead td {
+    background: transparent none repeat scroll 0 0;
+}
+
+.records-table thead th a, .records-table thead td a, .records-table thead th span, .records-table thead td span {
+    background-color: #fff !important;
+    border: none;
+    color: #bbb;
+    display: block;
+    overflow: hidden;
+    padding: 7px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+
+.records-table thead th, .records-table thead td {
+    background-color: #fff !important;
+}
+
+#messagelistfooter {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 0;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    border-bottom: 0px solid #b2b2b2;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.searchbox input, #quicksearchbar input {
+    background: #fff none repeat scroll 0 0;
+    border-color: #eee;
+}
+
+.toolbar a.button {
+    background-image: url(/skins/cgt/buttons.png);
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+    font-size: 10px;
+    height: 13px;
+    max-width: 70px;
+    min-width: 50px;
+    overflow: hidden;
+    padding: 22px 2px 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+.listbox .listitem.selected, .listbox .tablink.selected, .listbox .listitem.selected > a, .listbox .tablink.selected > a, .listing tbody tr.selected td, .listing li.selected, .listing li.selected > a {
+    background-color: #d14836;
+    background-image: -moz-linear-gradient(center top , #dd4b39, #d14836);
+    color: #fff;
+    font-weight: bold;
+}
+.listbox .listitem, .listbox .tablink, .listing tbody td, .listing li {
+    border-bottom: 0px solid #bbd3da;
+    border-top: 0px solid #fff;
+}
+.listbox .listitem a, .listbox .listitem span, .listbox .tablink a, .listing tbody td, .listing li a {
+    color: #000;
+    text-shadow: none;
+}
+
+ul.listing li {
+    background-color: #fff;
+}
+
+
+.folderlist li.mailbox.selected > a .unreadcount {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: none;
+    color: #fff;
+}
+
+
+.folderlist li.mailbox .unreadcount {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #000;
+}
+
+
+.uibox .boxfooter {
+    border-radius: 0;
+}
+.listbox .boxfooter {
+    background: transparent none repeat scroll 0 0;
+    border-top: 0 solid #ccdde4;
+}
+
+.uibox .boxfooter .listbutton:first-child {
+    border-radius: 0;
+}
+.boxfooter .listbutton {
+    background: transparent none repeat scroll 0 0;
+    border-right: 0 solid #fff;
+}
+
+
+.records-table.focus tr.selected td, .records-table tr.selected td {
+    background: #ffc none repeat scroll 0 0 !important;
+    color: #aaa !important;
+}
+.records-table tr.selected td a, .records-table tr.selected td span {
+    color: #aaa !important;
+}
+
+a.menuselector {
+    background: #eee none repeat scroll 0 0;
+    border-bottom: 1px solid #b2b2b2;
+    border-top: medium none;
+    border-left: medium none;
+    border-right: medium none; 
+    border-radius: 0;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a.menuselector .handle {
+    background: #fff none no-repeat scroll right center;
+    border-radius: 0;
+    display: inline-block;
+    height: 20px;
+    line-height: 19px;
+    padding: 0 32px 0 6px;
+    text-shadow: none;
+}
+
+#messageheader, #composeheaders {
+    background: transparent none repeat scroll 0 0;
+    border-bottom: 0 solid #dfdfdf;
+}
+#composeheaders {
+    border-radius: 0;
+    padding-left: 19px;
+}
+
+.moreheaderstoggle {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    border-right: 0 solid #dfdfdf;
+}
+
+
+
+input.button.mainaction,
+.formbuttons input.button,
+input.button,
+.pagenav.dark a.button,
+.pagenav a.button,
+a.button, .buttongroup {
+    background: #eee none repeat scroll 0 0;
+    border: none medium;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1) 0s, background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: box-shadow, transform;
+    color: #525252;
+    text-shadow: none;
+}
+
+
+.pagenav .pagejumper {
+    background: transparent none repeat scroll 0 0;
+}
+
+.minimal #taskbar a.button-selected,
+#taskbar a.button-selected {
+    border-bottom: 2px solid #2FD167;
+    color: #fff;
+}
+
+.minimal #taskbar a,
+#taskbar a {
+    display: inline-block;
+   color: #FFB1AF;
+   display: inline-block;
+    height: 26px;
+    padding: 0 6px 6px;
+}
+}
+
+.topright {
+    float: none;
+    position: absolute;
+}
+
+.toolbar a.button:focus {
+    border-radius: 0;
+    background-color: #d14836;
+    background-image: -moz-linear-gradient(center top , #dd4b39, #d14836);
+    text-shadow: none;
+
+}
+
+.buttongroup a.button.selected, .buttongroup a.button.selected:hover {
+    background: #aaa none repeat scroll 0 0;
+    border: 1px solid #c6c6c6;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#compose-contacts #directorylist {
+    border-bottom: 0px solid #fff;
+}
+
+.listsearchbox {
+    background: #fff none repeat scroll 0 0;
+}
+
+.uibox .boxtitle, .uibox .listing thead th, .uibox .listing thead td {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    color: #222;
+}
+
+.boxtitle, .uibox .listing thead th, .uibox .listing thead td {
+    border-bottom: 0px solid #bbd3da;
+}
+
+
+.folderlist li.mailbox.recent > a .unreadcount {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: none;
+}
+
+.folderlist li.recent > a {
+    color: #222;
+}
+
+.messagelist tr > .attachment, .messagelist tr > .threads, .messagelist tr > .status, .messagelist tr > .flag, .messagelist tr > .priority {
+    padding: 0;
+}
+
+
+.folderlist li.mailbox a {
+    background-image: none;
+    background-position: 6px 3px;
+    padding-left: 16px;
+}
+
+.folderlist li.mailbox ul li a {
+    padding-left: 32px;
+}
+
+.folderlist li.mailbox div.treetoggle {
+    left: 3px;
+    top: 7px;
+}
+
+html.mozilla #mailboxlist > li:first-child {
+    border-radius: 0;
+}
+
+.popupmenu, #rcmKSearchpane {
+    background: #fff none repeat scroll 0 0;
+    border: none medium;
+    border-radius: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+}
+
+ul.toolbarmenu li span.icon, #rcmKSearchpane ul li i.icon {
+  font-size: 12px;
+    min-height: 14px;
+    opacity: 1;
+    padding: 2px 6px 2px 32px;
+    text-decoration: none;
+}
+
+ul.toolbarmenu li a.icon {
+    color: #222;
+    padding: 2px 6px;
+}
+
+.googie_list td span, ul.toolbarmenu li a {
+    text-shadow: none;
+    font-size: 12px;
+    min-height: 14px;
+    padding: 6px 16px 6px 10px;
+    text-decoration: none;
+}
+
+.googie_list td span, ul.toolbarmenu li a.active {
+    color: #222;
+    cursor: default;
+}
+
+
+.googie_list td.googie_list_onhover, ul.toolbarmenu li a.active:hover, ul.toolbarmenu li a.active:focus, #rcmKSearchpane ul li.selected, #pagejump-selector ul li.selected, select.decorated option:hover, select.decorated option[selected="selected"] {
+    background: #eee none repeat scroll 0 0;
+    outline: 0 none;
+    text-shadow: none; 
+}
+
+.popmenu a {
+    text-shadow: none !important; 
+    color: #222;
+}
+
+.googie_list td, ul.toolbarmenu li, #rcmKSearchpane ul li {
+    border-bottom: medium none;
+    border-top: medium none !important;
+    color: #222;
+    margin: 0;
+    min-width: 130px;
+    white-space: nowrap;
+    font-size: 12px;
+    min-height: 14px;
+    text-decoration: none;
+}
+
+
+ul.toolbarmenu li label {
+    color: #222;
+    text-shadow: none;
+}
+
+select.decorated option {
+    background: #fff none repeat scroll 0 0;
+    border-color: #fff -moz-use-text-color #333;
+    border-image: none;
+    border-style: solid none;
+    border-width: 0;
+    color: #222;
+    cursor: default;
+    outline: 0 none;
+    text-shadow: none;
+    font-size: 12px;
+    min-height: 14px;
+    padding: 6px 16px 6px 10px;
+    text-decoration: none;
+}
+
+ul.proplist li, table.propform td {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 2px solid #fff;
+}
+
+#tasksview .buttonbar {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-bottom: 0 none;
+    color: #222;
+}
+
+.contentbox .boxtitle, body.iframe .boxtitle {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 0 solid #ccc;
+    color: #222;
+}
+
+.listbox .listitem, .listbox .tablink, .listing tbody td, .listing li {
+    border-bottom: 0 solid #fff;
+    border-top: 0 solid #fff;
+    background-color: #fff;
+}
+
+#mailboxmenulink {
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+    
+    border-radius: 50%;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+    font-size: 24px;
+
+    line-height: normal;
+    margin: auto;
+
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1) 0s, background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: box-shadow, transform;
+}
+
+
+input[type="text"], input[type="password"], textarea, select {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
+    background-position: center bottom, center calc(100% - 1px);
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    float: none;
+    transition: background 0s ease-out 0s;
+    font-size: 14px;
+    height: auto !important;
+    line-height: 1.42857;
+    padding: 7px 0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input.button:focus, textarea:focus, select:focus {
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
+    background-size: 100% 2px, 100% 1px;
+    box-shadow: none !important;
+    outline: medium none;
+    transition-duration: 0.3s;
+    border-color: transparent !important;
+}
+
+.headers-table td.header, .ui-dialog-content.popup span.adr {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 7px 0;
+}
+
+.headers-table td.header-title {
+    color: #bbb;
+}
+
+.ui-dialog {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none !important;
+    border-radius: 0 !important;
+    box-shadow: 1px 1px 18px #666;
+    left: 0;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+.ui-dialog .ui-button.ui-dialog-titlebar-close {
+ right: 0;
+    top: 0;
+}
+
+.contactfieldgroup legend {
+    background: transparent none repeat scroll 0 0;
+}
+
+.contactfieldgroup {
+    background: transparent none repeat scroll 0 0;
+}
+
+.contactfieldgroup .contactfieldcontent {
+    font-size: 14px;
+}
+
+a.iconlink {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll -1000px 0;
+    color: #888;
+    display: inline-block;
+    padding: 2px 8px;
+    text-decoration: none;
+    white-space: nowrap;
+}

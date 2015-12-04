@@ -270,6 +270,8 @@ input[type="text"], input[type="password"], textarea, select {
 .searchbox input, #quicksearchbar input {
     background: #fff none repeat scroll 0 0;
     border-color: #eee;
+    border-bottom: 1px solid #b2b2b2;
+    padding: 3px 30px 7px 34px;
 }
 
 .toolbar a.button {

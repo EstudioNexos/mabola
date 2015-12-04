@@ -63,10 +63,8 @@ font-size: 1em;
 
 }
 
-
-
 #login-form .box-inner {
-    background: transparent none no-repeat scroll left top;
+    background:#666;
     border: 0px solid #333;
     border-radius: 0px;
     box-shadow: none;
@@ -94,11 +92,9 @@ font-size: 1em;
 }
 
 #login-form {
-    background-image: url("/skins/cgt/logo_sello_login.png");
-    background-position: center top;
-    margin: 0 auto 2ex;
+    padding-top:200px;
     padding-bottom: 100px;
-    padding-top: 400px;
+    margin: 0 auto 2ex;
     position: relative;
     width: 580px;
 }

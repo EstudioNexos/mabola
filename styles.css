@@ -32,7 +32,6 @@
 }
 
 body {
-/*    background: #5c5c5c url("https://cgt.org.es/sites/default/files/IMG/png/logo_sello.png") no-repeat scroll center top;*/
     background: #f5f5f5 none no-repeat scroll center top;
     color: #212121;
     font-family: "RobotoDraft","Roboto",sans-serif;
@@ -121,7 +120,7 @@ font-size: 1em;
 #topnav {
     background: #D1342F none repeat scroll 0 0;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.26);
-    background-image: url("/skins/mabola/images/logo-mabola.png");
+    background-image: url("images/logo-mabola.png");
     background-position: 0.5% center;
     background-repeat: no-repeat;
 }
@@ -150,8 +149,21 @@ font-size: 1em;
 */
 #topline a.button-logout {
     color: #fff;
-    background:rgba(0, 0, 0, 0) url("/skins/cgt/buttons.png") no-repeat scroll -6px -193px;
+    background:rgba(0, 0, 0, 0) url("images/buttons.png") no-repeat scroll -6px -193px;
 }
+
+#mailview-right {
+    background-image: url("images/borde.png");
+    background-repeat: repeat-x;
+    bottom: 0;
+    left: 212px;
+    padding-top: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
 #topline .topleft a {
 color:#fff;
 }
@@ -268,7 +280,7 @@ input[type="text"], input[type="password"], textarea, select {
 }
 
 .toolbar a.button {
-    background-image: url(/skins/cgt/buttons.png);
+    background-image: url(images/buttons.png);
     border: 0 none;
     border-radius: 0;
     box-shadow: none;

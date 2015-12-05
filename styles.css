@@ -503,6 +503,16 @@ a.button, .buttongroup {
     top: 7px;
 }
 
+
+.folderlist li.mailbox ul ul li.mailbox a {
+    padding-left: 45px;
+}
+
+.folderlist li.mailbox ul li div.treetoggle {
+    left: 18px;
+    top: 7px;
+}
+
 html.mozilla #mailboxlist > li:first-child {
     border-radius: 0;
 }

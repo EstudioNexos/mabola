@@ -351,7 +351,7 @@ ul.listing li {
 }
 
 .listbox .boxfooter {
-    background: transparent none repeat scroll 0 0;
+    background: #eee none repeat scroll 0 0;
     border-top: 0 solid #ccdde4;
 }
 
@@ -680,7 +680,7 @@ ul.proplist li, table.propform td {
     border-top: 0 solid #fff;
     background-color: #fff;
 }
-
+/*
 #mailboxmenulink {
     height: 40px;
     min-width: 40px;
@@ -700,9 +700,11 @@ ul.proplist li, table.propform td {
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1) 0s, background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     will-change: box-shadow, transform;
 }
+*/
 
-
-input[type="text"], input[type="password"], textarea, select {
+input[type="text"], input[type="password"], textarea, select,
+#quickaddinput, #quicksearchbox
+{
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
     background-position: center bottom, center calc(100% - 1px);
@@ -721,7 +723,9 @@ input[type="text"], input[type="password"], textarea, select {
     padding: 7px 0;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input.button:focus, textarea:focus, select:focus {
+input[type="text"]:focus, input[type="password"]:focus, input.button:focus, textarea:focus, select:focus,
+#quickaddinput:focus
+ {
     background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
     background-size: 100% 2px, 100% 1px;
     box-shadow: none !important;
@@ -782,9 +786,40 @@ a.iconlink {
     background: rgba(0, 0, 0, 0) url("images/listicons.png") no-repeat scroll -100px 0;
 }
 
-a.button span.icon, .pagenav a.button span.inner {
+a.button span.icon, .boxpagenav a.icon, .pagenav a.button span.inner {
     background-image: url("images/buttons.png");
 }
 #compose-contacts li a, #contacts-table td {
     background-image: url("images/listicons.png");
+}
+
+#sections-table tbody td, #sections-table .listitem span, #settings-sections .listitem a, #settings-sections .tablink a {
+    background-image: url("images/listicons.png");
+}
+
+.ui-widget-header {
+    background: #fff none repeat scroll 0 0;
+}
+
+.ui-widget-content {
+    background: #fff none repeat scroll 0 0;
+}
+.ui-tabs .ui-tabs-panel {
+    background: #fff none repeat scroll 0 0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    background: #fff none repeat scroll 0 0;
+    border-right: 1px solid #fafafa;
+    border-top: 1px solid #fafafa;
+    color: #999;
+    display: inline-block;
+    font-size: 12px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    background: #eee none repeat scroll 0 0;
+    color: #000;
 }

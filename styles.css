@@ -164,6 +164,20 @@ font-size: 1em;
     z-index: 3;
 }
 
+#mailview-right #messageheader {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.3);
+    max-height: 50%;
+    overflow: auto;
+    padding-left: 78px;
+    z-index: 9000;
+}
+
+#messagecontent {
+    padding-top: 20px;
+}
+
 #topline .topleft a {
 color:#fff;
 }
@@ -335,6 +349,7 @@ ul.listing li {
 .uibox .boxfooter {
     border-radius: 0;
 }
+
 .listbox .boxfooter {
     background: transparent none repeat scroll 0 0;
     border-top: 0 solid #ccdde4;
@@ -348,6 +363,9 @@ ul.listing li {
     border-right: 0 solid #fff;
 }
 
+.boxfooter .listbutton .inner {
+    background-image: url("/skins/mabola/images/buttons.png");
+}
 
 .records-table.focus tr.selected td, .records-table tr.selected td {
     background: #ffc none repeat scroll 0 0 !important;
@@ -382,9 +400,25 @@ a.menuselector .handle {
 }
 
 #messageheader, #composeheaders {
-    background: transparent none repeat scroll 0 0;
-    border-bottom: 0 solid #dfdfdf;
+    background: transparent none repeat-x scroll 0 0;
 }
+
+#composeheaders {
+    background: transparent url("images/borde.png") repeat-x scroll 0 0;
+    border-bottom: 0 solid #dfdfdf;
+    padding-top: 20px;
+}
+
+#messageheader {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.3);
+    max-height: 50%;
+    overflow: auto;
+    padding-left: 78px;
+    z-index: 9000;
+}
+
 #composeheaders {
     border-radius: 0;
     padding-left: 19px;
@@ -396,6 +430,19 @@ a.menuselector .handle {
     border-right: 0 solid #dfdfdf;
 }
 
+
+#messageheader.previewheader {
+    background: #fff url("images/borde.png") repeat-x scroll 0 0;
+    height: auto;
+    min-height: 52px;
+    padding: 12px 0 3px 72px;
+    position: relative;
+}
+
+#messagecontent .rightcol, #messagepreview .rightcol {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    min-height: auto;
+}
 
 
 input.button.mainaction,
@@ -423,6 +470,15 @@ a.button, .buttongroup {
 #taskbar a.button-selected {
     border-bottom: 2px solid #2FD167;
     color: #fff;
+}
+
+#taskbar .minmodetoggle {
+    background: rgba(0, 0, 0, 0) url("images/buttons.png") no-repeat scroll -35px -1778px;
+}
+
+
+.dropbutton .dropbuttontip {
+    background: rgba(0, 0, 0, 0) url("images/buttons.png") no-repeat scroll 0 -1255px;
 }
 
 .minimal #taskbar a,
@@ -479,6 +535,10 @@ a.button, .buttongroup {
     box-shadow: none;
 }
 
+#folder-selector li a span {
+    background: #fff none repeat scroll 0 0;
+}
+
 .folderlist li.recent > a {
     color: #222;
 }
@@ -526,11 +586,12 @@ html.mozilla #mailboxlist > li:first-child {
 }
 
 ul.toolbarmenu li span.icon, #rcmKSearchpane ul li i.icon {
-  font-size: 12px;
-    min-height: 14px;
-    opacity: 1;
-    padding: 2px 6px 2px 32px;
-    text-decoration: none;
+   background-image: url("images/listicons.png");
+   font-size: 12px;
+   min-height: 14px;
+   opacity: 1;
+   padding: 2px 6px 2px 32px;
+   text-decoration: none;
 }
 
 ul.toolbarmenu li a.icon {
@@ -715,4 +776,15 @@ a.iconlink {
     padding: 2px 8px;
     text-decoration: none;
     white-space: nowrap;
+}
+
+.messagelist tr td div.collapsed, .messagelist tr td div.expanded, .messagelist tr > .threads .listmenu, .messagelist tr > .attachment span.attachment, .messagelist tr > .attachment span.report, .messagelist tr > .priority span.priority, .messagelist tr > .priority span.prio1, .messagelist tr > .priority span.prio2, .messagelist tr > .priority span.prio3, .messagelist tr > .priority span.prio4, .messagelist tr > .priority span.prio5, .messagelist tr > .flag span.flagged, .messagelist tr > .flag span.unflagged, .messagelist tr > .flag span.unflagged:hover, .messagelist tr > .status span.status, .messagelist tr > .status span.msgicon, .messagelist tr > .status span.deleted, .messagelist tr > .status span.unread, .messagelist tr > .status span.unreadchildren, .messagelist tr > .subject span.msgicon, .messagelist tr > .subject span.deleted, .messagelist tr > .subject span.unread, .messagelist tr > .subject span.replied, .messagelist tr > .subject span.forwarded, .messagelist tr > .subject span.unreadchildren {
+    background: rgba(0, 0, 0, 0) url("images/listicons.png") no-repeat scroll -100px 0;
+}
+
+a.button span.icon, .pagenav a.button span.inner {
+    background-image: url("images/buttons.png");
+}
+#compose-contacts li a, #contacts-table td {
+    background-image: url("images/listicons.png");
 }

@@ -7,7 +7,7 @@ It supports Threecol plugin. Check it out at EstudioNexos/threecol.
 
 Icons are from https://github.com/laclasse-com/roundcube_laclasse_skin.
 
-
+Screenshots at http://www.estudionexos.com/mabola-skin-for-roundcube.html
 
 LICENSE for Laclasse Icons:
 

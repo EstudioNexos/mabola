@@ -63,12 +63,12 @@ font-size: 1em;
 }
 
 #login-form .box-inner {
-    background:#666;
+    background:#666 url("/skins/mabola/images/logo-medium-mabola.png") no-repeat scroll center 14px;
     border: 0px solid #333;
     border-radius: 0px;
     box-shadow: none;
     margin: 0 50px;
-    padding: 10px 24px 24px;
+    padding: 140px 24px 24px;
     width: 430px;
 }
 
@@ -123,6 +123,7 @@ font-size: 1em;
     background-image: url("images/logo-mabola.png");
     background-position: 0.5% center;
     background-repeat: no-repeat;
+   background-size: 36px auto;
 }
 
 #mainscreen {

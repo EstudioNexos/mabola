@@ -370,7 +370,7 @@ ul.listing li {
 }
 
 .boxfooter .listbutton .inner {
-    background-image: url("/skins/mabola/images/buttons.png");
+    background-image: url("images/buttons.png");
 }
 
 .records-table.focus tr.selected td, .records-table tr.selected td {

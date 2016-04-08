@@ -53,6 +53,7 @@ box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.12);
 #taskbar a.button-settings:before {
 content: "\f085";
 box-sizing:border-box;
+line-height: 2.4;
 font-size: 1em;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;

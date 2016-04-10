@@ -11,6 +11,9 @@ Icons are from https://github.com/laclasse-com/roundcube_laclasse_skin.
 
 Screenshots at http://www.estudionexos.com/mabola-skin-for-roundcube.html
 
+LICENSE for Mabola Skin: GNU General Public License v3 
+See http://www.gnu.org/licenses/gpl-3.0.en.html for details
+
 LICENSE for Laclasse Icons:
 
 The contents of this folder are subject to the Creative Commons

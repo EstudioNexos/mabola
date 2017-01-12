@@ -1,7 +1,7 @@
 Mabola: Skin for Roundcube Webmail
 ==================================
 
-Tested on Roundcube 1.2-beta and 1.1.4
+Tested on Roundcube 1.2.x and 1.1.4
 
 Mabola is a clean and usable skin for latest Roundcube Webmail (http://roundcube.net). Is based on Material Design, Bootstrap and inherits from Larry Skin, so there should be no unstyled content.
 

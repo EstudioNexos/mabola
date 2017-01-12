@@ -11,6 +11,25 @@ Icons are from https://github.com/laclasse-com/roundcube_laclasse_skin.
 
 Screenshots at http://www.estudionexos.com/mabola-skin-for-roundcube.html
 
+Variations:
+-----------
+
+Only available color variation at the moment is Blue (although we have other colors in production)
+
+https://github.com/EstudioNexos/mabola-blue
+
+
+How to install:
+---------------
+
+Just put zip file from https://github.com/EstudioNexos/mabola/archive/master.zip in your roundcube/skins folder.
+
+Then uncompress zip file and rename "mabola-master" to "mabola" (zip file can be deleted if it is still around)
+
+After that you can go to your roundcube user preferences and choose **Mabola**.
+
+
+
 References:
 -----------
 
@@ -19,6 +38,9 @@ https://discourse.mailinabox.email/t/install-mabola-skin-for-roundcube-mail/1520
 
 * https://mailinabox.email/
 
+
+License:
+--------
 
 LICENSE for Mabola Skin: GNU General Public License v3 
 See http://www.gnu.org/licenses/gpl-3.0.en.html for details

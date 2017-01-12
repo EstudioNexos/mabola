@@ -11,6 +11,15 @@ Icons are from https://github.com/laclasse-com/roundcube_laclasse_skin.
 
 Screenshots at http://www.estudionexos.com/mabola-skin-for-roundcube.html
 
+References:
+-----------
+
+Mabola skin is know included in "Mail-In-A-Box"* great mailing server setup package.
+https://discourse.mailinabox.email/t/install-mabola-skin-for-roundcube-mail/1520/11
+
+* https://mailinabox.email/
+
+
 LICENSE for Mabola Skin: GNU General Public License v3 
 See http://www.gnu.org/licenses/gpl-3.0.en.html for details
 

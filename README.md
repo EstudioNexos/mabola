@@ -38,6 +38,10 @@ https://discourse.mailinabox.email/t/install-mabola-skin-for-roundcube-mail/1520
 
 * https://mailinabox.email/
 
+User **filhocf** has created a docker file which includes Roundcube, Mabola Skin and other interesting Roundcube plugins:
+
+https://hub.docker.com/r/filhocf/roundcube/
+
 
 License:
 --------

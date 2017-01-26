@@ -222,7 +222,7 @@ color:#fff;
     position: relative;
 }
 
-#taskbar a.button-settings span.button-inner  {}
+#taskbar a.button-settings span.button-inner,
 .button-settings .button-inner {display:none;}
 
 .minimal #taskbar a span.button-inner,
@@ -942,4 +942,13 @@ a.button span.icon, .boxpagenav a.icon, .pagenav a.button span.inner {
 	top: 4px;
 	left: 6px;
 	background: url(images/ajaxloader_dark.gif) 0 4px no-repeat;
+}
+
+#tb_label_popuplink {
+    background-image: url("images/buttons.png");
+    background-position: center -2004px;
+    height: 13px;
+    margin: 0 5px;
+    padding: 28px 2px 0;
+    width: 32px;
 }

@@ -37,10 +37,6 @@ body {
     font-family: "RobotoDraft","Roboto",sans-serif;
 }
 
-/**::before, *::after {
-    box-sizing: border-box;
-}*/
-
 #header {
 min-height:115px;
 background:#fff;
@@ -49,27 +45,6 @@ box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.12);
 .minimal #header {min-height:105px;}
 
 #logo, #toplogo {display:none;}
-
-#taskbar a.button-settings {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-language-override: normal;
-    font-size: inherit;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-style: normal;
-    font-synthesis: weight style;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 3;
-    text-rendering: auto;
-}
-
-#taskbar a.button-settings:before {
-    content: "\f085";
-}
 
 #login-form .box-inner {
     background:#666 url("/skins/mabola/images/logo-medium-mabola.png") no-repeat scroll center 14px;
@@ -152,11 +127,6 @@ box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.12);
     top: 42px;
 }
 
-/*
-#mainscreen {
-    background-color: #fff;
-}
-*/
 #topline a.button-logout {
     color: #fff;
     background:rgba(0, 0, 0, 0) url("images/buttons.png") no-repeat scroll -6px -193px;
@@ -220,10 +190,8 @@ color:#fff;
     padding-right: 18px;
     padding-top: 14px;
     position: relative;
+    line-height: 3;
 }
-
-#taskbar a.button-settings span.button-inner,
-.button-settings .button-inner {display:none;}
 
 .minimal #taskbar a span.button-inner,
 #taskbar a span.button-inner {
@@ -395,7 +363,7 @@ a.menuselector {
     border-bottom: 1px solid #b2b2b2;
     border-top: medium none;
     border-left: medium none;
-    border-right: medium none; 
+    border-right: medium none;
     border-radius: 0;
     color: #333;
     cursor: pointer;
@@ -634,11 +602,11 @@ ul.toolbarmenu li a.icon {
 .googie_list td.googie_list_onhover, ul.toolbarmenu li a.active:hover, ul.toolbarmenu li a.active:focus, #rcmKSearchpane ul li.selected, #pagejump-selector ul li.selected, select.decorated option:hover, select.decorated option[selected="selected"] {
     background: #eee none repeat scroll 0 0;
     outline: 0 none;
-    text-shadow: none; 
+    text-shadow: none;
 }
 
 .popmenu a {
-    text-shadow: none !important; 
+    text-shadow: none !important;
     color: #222;
 }
 
@@ -703,7 +671,7 @@ ul.proplist li, table.propform td {
     height: 40px;
     min-width: 40px;
     width: 40px;
-    
+
     border-radius: 50%;
     box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
     font-size: 24px;
@@ -879,7 +847,7 @@ a.button span.icon, .boxpagenav a.icon, .pagenav a.button span.inner {
     font-weight: bold;
     color: #2B3240;
     text-shadow: 0 0 0 transparent;
-    
+
     border: medium none;
 /*
     border: 1px solid #E5E5E5;
@@ -888,7 +856,7 @@ a.button span.icon, .boxpagenav a.icon, .pagenav a.button span.inner {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
     transition: all 0.4s ease 0s;
-    
+
     background: #ffffff;
    /* background: -moz-linear-gradient(top, rgba(64,64,64,0.85) 0%, rgba(48,48,48,0.9) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,0.85)), color-stop(100%,rgba(48,48,48,0.9)));
